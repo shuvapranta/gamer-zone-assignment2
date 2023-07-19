@@ -279,11 +279,13 @@ nav {
   font-weight: 600;
   margin-bottom: 60px;
 }
+.footer-icon{
+  margin-bottom: 64px;
+}
 .footer-icon i {
   color: #fff;
   width: 40px;
   height: 40px;
-  margin-bottom: 64px;
 }
 .setting ul li{
   padding: 10px;
@@ -353,6 +355,18 @@ nav {
   .games {
     padding: 60px;
   }
+  .footer ul,.footer-icon{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+  }
+  .footer-icon{
+    
+    padding: 0 60px;
+  }
+  .setting ul{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+  } 
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
