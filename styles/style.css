@@ -231,9 +231,10 @@ nav {
   color: #ff42a5;
 }
 /* footer styles */
-/* .footer {
+.footer {
   background: #0b0223;
-} */
+  padding: 120px 0;
+}
 .footer-container {
   margin: 0 auto;
   text-align: center;
@@ -242,12 +243,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 66px;
+  margin-bottom: 56px;
 }
 .footer-logo h4 {
   text-align: center;
   font-size: 2.8rem;
   font-weight: 700;
+  color: #fff;
 }
 .footer-logo h4 span {
   background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
@@ -255,7 +257,50 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li a {
+  text-decoration: none;
+}
+.footer-menu ul > li {
+  padding: 10px;
+  margin-bottom: 56px;
+}
+.footer-menu li a {
+  color: #fff;
+  text-align: center;
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.footer-icon i {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 64px;
+}
+.setting ul li{
+  padding: 10px;
+  margin-bottom: 18px;
+}
+.setting ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.copy-right p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
 /* Responsive styles */
 @media screen and (max-width: 576px) {
   nav,
