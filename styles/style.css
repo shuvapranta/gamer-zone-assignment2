@@ -137,20 +137,89 @@ nav {
   font-size: 1.12rem;
   font-weight: 400;
   line-height: 30px;
-  margin-top: 20px ;
+  margin-top: 20px;
   margin-bottom: 48px;
 }
-.games-video-container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 5px;
+.games-video-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
 }
-.games-video-items p{
-    color: #534C64;
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 30px;
-    margin-top: 24px;
+.games-video-items p {
+  color: #534c64;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 24px;
+}
+/* Play game styles */
+.play-game {
+  padding: 0 240px;
+}
+.play-game-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 265px;
+  align-items: center;
+}
+.play-game-info {
+  margin-left: 100px;
+  text-align: right;
+}
+.play-game-info h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 60px;
+}
+.play-game-info span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.play-game-info p {
+  color: #534c64;
+  font-size: 1.12rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 24px;
+}
+.play-game-img {
+  position: relative;
+  z-index: 1;
+}
+.play-game-img .second-img {
+  position: absolute;
+  left: -84px;
+  bottom: -40px;
+  z-index: 2;
+}
+/* games styles */
+.games{
+    padding: 120px 240px;
+}
+.game-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.game-items {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-right: 27px;
+}
+.game-items img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+.game-items p {
+  margin-left: 16px;
+  color: #0b0223;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 /* Responsive styles */
 @media screen and (max-width: 576px) {
@@ -184,16 +253,30 @@ nav {
   .banner-img img {
     width: 100%;
   }
-  .video{
+  .video {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .games-video-container{
+  .play-game-container,
+  .games-video-container {
     grid-template-columns: 1fr;
   }
+  .play-game-container {
+    gap: 50px;
+  }
+  .play-game {
+    padding: 0 20px;
+  }
+  .play-game-img img {
+    width: 100%;
+  }
+  .games{
+    padding: 60px ;
+  }
+  
 }
 
-@media screen and (min-width:576px) and (max-width:992px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
   nav {
     padding: 44px 50px;
   }
@@ -211,11 +294,11 @@ nav {
   .banner-img img {
     width: 100%;
   }
-  .video{
+  .video {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .games-video-container{
-    grid-template-columns: repeat(2,1fr);
+  .games-video-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
