@@ -495,12 +495,14 @@ nav {
   }
   .play-game-img {
     width: 100%;
+    padding-left: 80px;
   }
   .play-game-img .frist-img {
     width: 70%;
   }
   .play-game-img .second-img {
     width: 30%;
+    left: 0;
   }
   .games {
     padding: 70px 20px;
@@ -522,10 +524,18 @@ nav {
     margin-left: 0;
     font-size: 1rem;
   }
-  .career-info{
-    padding: 20px;
+  .career-container{
+    padding: 0;
   }
-  
+  .career-info{
+    padding: 50px;
+  }
+  .career-img{
+    width: 100%;
+  }
+  .career-img img{
+    width: 100%;
+  }
   .footer ul,
   .footer-icon {
     display: grid;
